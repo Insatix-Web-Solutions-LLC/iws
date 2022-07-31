@@ -11,6 +11,7 @@ import About from "./views/About";
 import Contact from "./views/Contact";
 import Home from "./views/Home";
 import Services from "./views/Services";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

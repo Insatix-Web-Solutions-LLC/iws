@@ -1,36 +1,51 @@
 import React from "react";
+
+// Routing
 import { Link } from "react-router-dom";
+
+// Styles
+import Styles from "./styles/Header.module.scss";
 
 const Header = () => {
   return (
-    <section className="header">
-      <div className="header__container">
-        <div className="header__logo-container">
-          <h1 className="header__logo-text">
-            <Link to="/" className="header__logo-link">
-              Insatix Web Solutions
-            </Link>
-          </h1>
+    <section className={Styles.header}>
+      <div className={Styles["header__row"]}>
+        <div className={Styles["header__logo-container"]}>
+          <Link to="/" className={Styles["header__logo-link"]}>
+            Insatix Web Solutions
+          </Link>
         </div>
-        <nav className="header__nav-container">
-          <ul className="header__nav-list">
-            <li className="header__nav-item">
-              <Link to="/about" className="header__nav-link">
+        <nav className={Styles["header__nav-wrapper"]}>
+          <ul className={Styles["header__nav-list"]}>
+            <li>
+              <Link
+                to="/about"
+                className={
+                  Styles["header__nav-link"] +
+                  " " +
+                  Styles["header__nav-link--first-of-type"]
+                }
+              >
                 About
               </Link>
             </li>
-            <li className="header__nav-item">
-              <Link to="/services" className="header__nav-link">
+            <li>
+              <Link to="/services" className={Styles["header__nav-link"]}>
                 Services
               </Link>
             </li>
-            <li className="header__nav-item">
-              <Link to="/contact" className="header__nav-link">
+            <li>
+              <Link to="/contact" className={Styles["header__nav-link"]}>
                 Contact
               </Link>
             </li>
           </ul>
         </nav>
+        <div className={Styles["header__cta-container"]}>
+          <Link to="/contact" className={Styles["header__cta-button"]}>
+            Get In Touch
+          </Link>
+        </div>
       </div>
     </section>
   );

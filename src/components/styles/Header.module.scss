@@ -1,0 +1,79 @@
+@import "../../Variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  background-color: $darkColor;
+
+  &__row {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__logo-link {
+    color: $primaryColor;
+    text-decoration: none;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  &__nav-link {
+    color: $primaryColor;
+    text-decoration: none;
+    margin-left: 1rem;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+
+    &--first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  &__cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__cta-button {
+    text-decoration: none;
+    color: $lightColor;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid $lightColor;
+    background-color: $tertiaryColor;
+
+    &--first-of-type {
+      margin-left: 0;
+    }
+  }
+}

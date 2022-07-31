@@ -3,30 +3,46 @@ import React from "react";
 // Routing
 import { Link } from "react-router-dom";
 
+// Styles
+import Styles from "./styles/Footer.module.scss";
+
 const Footer = () => {
   return (
-    <section className="footer">
-      <div className="footer__container">
-        <div className="footer__logo-container">
-          <h1 className="footer__logo-text">Insatix Web Solutions</h1>
+    <section className={Styles["footer"]}>
+      <div className={Styles["footer__container"]}>
+        <div className={Styles["footer__logo-container"]}>
+          <Link to="/" className={Styles["footer__logo-link"]}>
+            Insatix Web solutions
+          </Link>
         </div>
-        <nav className="footer__nav-container">
-          <ul className="footer__nav-list">
-            <li className="footer__nav-item">
-              <Link to="/about" className="footer__nav-link">
+        <nav className={Styles["footer__nav-container"]}>
+          <ul className={Styles["footer__nav-list"]}>
+            <li>
+              <Link
+                to="/about"
+                className={
+                  Styles["footer__nav-link"] +
+                  " " +
+                  Styles["footer__nav-link--first-of-type"]
+                }
+              >
                 About
               </Link>
-              <Link to="/services" className="footer__nav-link">
+            </li>
+            <li>
+              <Link to="/services" className={Styles["footer__nav-link"]}>
                 Services
               </Link>
-              <Link to="/contact" className="footer__nav-link">
+            </li>
+            <li>
+              <Link to="/contact" className={Styles["footer__nav-link"]}>
                 Contact
               </Link>
             </li>
           </ul>
         </nav>
-        <div className="footer__copuright-container">
-          <p className="footer__copyright-text">
+        <div className={Styles["footer__copyright-container"]}>
+          <p className={Styles["footer__copyright-text"]}>
             Copyright © 2022 Insatix Web Solutions. All rights reserved.
           </p>
         </div>

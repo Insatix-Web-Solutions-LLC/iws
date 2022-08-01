@@ -3,6 +3,9 @@ import React from "react";
 // Routing
 import { Link } from "react-router-dom";
 
+// Logo
+import Logo from "../assets/images/Insatix-Logo-Animated.gif";
+
 // Styles
 import Styles from "./styles/Footer.module.scss";
 
@@ -12,7 +15,11 @@ const Footer = () => {
       <div className={Styles["footer__container"]}>
         <div className={Styles["footer__logo-container"]}>
           <Link to="/" className={Styles["footer__logo-link"]}>
-            Insatix Web solutions
+            <img
+              src={Logo}
+              alt="Insatix Logo"
+              className={Styles["footer__logo-image"]}
+            />
           </Link>
         </div>
         <nav className={Styles["footer__nav-container"]}>

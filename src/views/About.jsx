@@ -1,9 +1,12 @@
 import React from "react";
 
+// Templates
+import Hero from "../templates/Hero";
+
 const About = () => {
   return (
     <div>
-      <h1>About</h1>
+      <Hero />
     </div>
   );
 };

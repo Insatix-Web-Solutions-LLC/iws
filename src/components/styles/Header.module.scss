@@ -24,9 +24,9 @@
     align-items: center;
   }
 
-  &__logo-link {
-    color: $primaryColor;
-    text-decoration: none;
+  &__logo-image {
+    width: auto;
+    height: 5rem;
   }
 
   &__nav-wrapper {
@@ -44,12 +44,12 @@
   }
 
   &__nav-link {
-    color: $primaryColor;
+    color: $secondaryColor;
     text-decoration: none;
     margin-left: 1rem;
 
     &:hover {
-      color: $secondaryColor;
+      color: $primaryColor;
     }
 
     &--first-of-type {
@@ -66,16 +66,12 @@
 
   &__cta-button {
     text-decoration: none;
-    color: $lightColor;
+    font-weight: bold;
+    color: $darkColor;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 1rem 1rem;
-    border: 2px solid $tertiaryColor;
-    background-color: $tertiaryColor;
-
-    &:hover {
-      border: 2px solid $lightColor;
-      color: $lightColor;
-    }
+    border: 2px solid $primaryColor;
+    background-color: $primaryColor;
   }
 }

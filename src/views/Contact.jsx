@@ -1,9 +1,12 @@
 import React from "react";
 
+//Templates
+import Hero from "../templates/Hero";
+
 const Contact = () => {
   return (
     <div>
-      <h1>Contact</h1>
+      <Hero />
     </div>
   );
 };

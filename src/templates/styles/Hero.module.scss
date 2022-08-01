@@ -1,22 +1,31 @@
 @import "../../Variables.scss";
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $lightColor;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 1rem;
 
   &__container {
     text-align: start;
     max-width: 1280px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__content {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 1rem;
+    min-width: 50%;
   }
 
   &__heading {
@@ -58,6 +67,28 @@
     &:hover {
       background-color: $darkColor;
       color: $primaryColor;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    max-width: 50%;
+
+    &--none {
+      display: none;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    &--none {
+      display: none;
     }
   }
 }

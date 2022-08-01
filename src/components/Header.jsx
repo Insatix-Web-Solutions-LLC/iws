@@ -3,6 +3,9 @@ import React from "react";
 // Routing
 import { Link } from "react-router-dom";
 
+// Logo
+import Logo from "../assets/images/Insatix-Logo-Animated.gif";
+
 // Styles
 import Styles from "./styles/Header.module.scss";
 
@@ -12,7 +15,11 @@ const Header = () => {
       <div className={Styles["header__row"]}>
         <div className={Styles["header__logo-container"]}>
           <Link to="/" className={Styles["header__logo-link"]}>
-            Insatix Web Solutions
+            <img
+              src={Logo}
+              alt="Insatix Logo"
+              className={Styles["header__logo-image"]}
+            />
           </Link>
         </div>
         <nav className={Styles["header__nav-wrapper"]}>

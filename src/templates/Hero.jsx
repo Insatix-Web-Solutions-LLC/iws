@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Styles
 import Styles from "./styles/Hero.module.scss";
 
-const Hero = ({ heading, subHeading, text, btnText, link, image }) => {
+const Hero = ({ heading, subHeading, text, btnText, link, image, altText }) => {
   return (
     <section className={Styles.hero}>
       <div className={Styles.hero__container}>
@@ -30,8 +30,8 @@ const Hero = ({ heading, subHeading, text, btnText, link, image }) => {
           }
         >
           <img
-            src={image}
-            alt="Business Startup"
+            src={!image ? "" : image}
+            alt={!image ? "" : altText}
             className={
               !image ? Styles["hero__image--none"] : Styles.hero__image
             }

@@ -26,10 +26,11 @@ const primaryHeroInfo = {
   heroSubheading:
     "Best in class services to launch your business to the next level",
   heroText:
-    "We exceed industry gold standards in delivering digital solutions to meet your business needs. From web design, development and branding, we are here to propel your business to the new heights. Give our friendly team a call today to discuss your needs and get started.",
+    "We exceed industry gold standards in delivering digital solutions to meet your business needs. From web design, development and branding, we are here to propel your business to new heights. Give our friendly team a call today to discuss your needs and let's get started!",
   heroBtnText: "Book Your Discovery Call",
   heroLink: "/contact",
   image: Image,
+  altText: "Business Startup",
 };
 
 export default Home;
